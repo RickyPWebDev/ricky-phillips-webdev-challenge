@@ -1,0 +1,288 @@
+* {
+    padding: 0;
+    margin: 0;
+    color:black;
+    text-align:center;
+}
+
+body {
+    background-image: url('../Assets/Background.png');
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-left: 5%;
+    margin-right: auto;
+    margin-bottom: 5%;
+}
+
+.image-container {
+    position: relative;
+    width: calc(33% - 100px);
+
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.weather-overlay {
+    position: absolute;
+    top: 8%;
+    left: 35%;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 14px;
+    max-width: 80%;
+    z-index: 1;
+    text-align: center;
+}
+
+.weather-overlay>h2 {
+    text-align: center;
+}
+
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#weather-icon {
+    position:relative;
+    top: 50px;
+    left: -90%;
+    width:100px;
+}
+
+.weather-output {
+    position: relative;
+        left: 30%;
+        font-size: 2em;
+        color: black;
+    }
+
+    #location {
+        color:black;
+        margin-top:50%;
+    }
+
+.news-overlay {
+       position: absolute;
+       top: 8%;
+       left: 10%;
+       color: white;
+       padding: 10px;
+       border-radius: 5px;
+       font-size: 14px;
+       max-width: 80%;
+       z-index: 1;
+       text-align: center;
+   }
+
+.news-overlay h2 {
+       position: absolute;
+       top:0;
+       left:100px;
+       color: black;
+       margin: 0;
+       padding: 5px;
+       font-size: 1.2em;
+       border-radius: 5px 5px 0 0;
+       text-align: center;
+   }
+
+.news-info {
+       margin-top: 10px;
+       text-align: left;
+   }
+
+.news-item {
+       margin-bottom: 8px;
+       color: black;
+   }
+
+.news-title {
+     text-align:center;
+       font-weight: bold;
+       font-size: 1em;
+       margin: 0;
+   }
+
+.news-desc {
+       font-size: 0.9em;
+       margin: 0;
+       color: #333;
+   }
+
+.sports-overlay {
+            position: absolute;
+            top: 8%;
+            left: 35%;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            max-width: 80%;
+            z-index: 1;
+            text-align: center;
+        }
+    
+.sports-overlay h2 {
+    color: black;
+    margin: 0;
+    padding: 5px;
+    font-size: 1.2em;
+    border-radius: 5px 5px 0 0;
+}
+    
+.sports-info {
+     margin-top: 10px;
+     text-align: left;
+    }
+    
+.match-item {
+    margin-bottom: 8px;
+     color: black;
+}
+    
+.match-date {
+        font-weight: bold;
+        font-size: 1em;
+    margin: 0;
+}
+    
+.match-teams {
+    font-size: 0.9em;
+    margin: 0;
+    color: #333;
+}
+    
+.match-score {
+    font-size: 0.9em;
+    margin: 0;
+    color: #333;
+}
+
+.photos-overlay {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    max-width: 80%;
+    z-index: 1;
+    text-align: center;
+}
+.photos-overlay h2 {
+    position:absolute;
+    top:-20%;
+    left:60%;
+    color: black;
+    margin: 0;
+    padding: 5px;
+    font-size: 1.2em;
+    border-radius: 5px 5px 0 0;
+}
+
+.photos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    width:250%;
+    padding:20px;
+    padding-right:10%;
+}
+
+.photo-item {
+    width: 100%;
+    padding-top: 100%;
+    background-color: white;
+    border: 2px solid yellow;
+    border-radius: 5px;
+}
+
+
+.tasks-overlay {
+    position: absolute;
+    top: 8%;
+    left: 35%;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    max-width: 80%;
+    z-index: 1;
+    text-align: left;
+}
+
+.tasks-overlay h2 {
+    color: black;
+    margin: 0;
+    padding: 5px;
+    font-size: 1.2em;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+}
+
+.tasks-list {
+    padding: 10px;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.task-item p {
+    margin: 0;
+    font-size: 1em;
+    border-bottom: 2px solid black;
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.task-item input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+.clothes-overlay {
+    position: absolute;
+    top: 8%;
+    left: 35%;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    max-width: 80%;
+    z-index: 1;
+    text-align: center;
+}
+
+.clothes-overlay h2 {
+    color: black;
+    margin: 0;
+    padding: 5px;
+    font-size: 1.2em;
+    border-radius: 5px 5px 0 0;
+}

@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('../Assets/Background.png');
+}
+
+h1 {
+    text-align:center;
+    color:white;
+    margin-top:5%;
+    font-size:4.5em;
+}
+
+h2 {
+    text-align: center;
+        color: white;
+        margin-top: 10%;
+}
+
+span a {
+    color:yellow;
+    text-decoration:none;
+}
+
+form {
+    text-align:center;
+}
+
+input{
+    margin-top:5%;
+    border:none;
+    background:transparent;
+    border-bottom:2px solid white;
+    height:100%;
+    width: 20%;
+
+}
+
+input:first-of-type {
+    margin-right: 200px; 
+}
+
+::placeholder {
+    color:white;
+    font-size:1.5em;
+}
+
+.image-button {
+    margin-top:10%;
+    border-radius: 50px;
+}

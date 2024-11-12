@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in Page</title>
+    <link rel="stylesheet" href="/style/login.css">
+</head>
+
+<body>
+    <main>
+        <h1>Hackathon</h1>
+
+        <form id="myForm" onsubmit="authenticate(event)">
+            <input type="text" placeholder="username" id="username">
+            <input type="password" placeholder="password" id="password">
+            <br />
+            <button type="submit" class="image-button">
+                <img src="./Assets/Login_button.png" alt="Button Image">
+            </button>
+        </form>
+
+        <h2>New to hackathon? <span><a href="register.html">Sign up</a></span></h2>
+    </main>
+    <script src="/scripts/login.js"></script>
+</body>
+
+</html>
